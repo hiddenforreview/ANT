@@ -1,6 +1,5 @@
-# Knowledge Amalgamation for Multi-Label Classification 
-Anonymous repository for <i>Knowledge Amalgamation for Multi-Label Classification (KAMLC)</i>.
-We propose <i>Adaptive kNowledge Transfer (ANT)</i> to solve KAMLC.
+# Knowledge Amalgamation for Multi-Label Classification (KAMLC)
+This is the implementation repository of <i>Adaptive kNowledge Transfer (ANT)</i>, the solution for (KAMLC).
 
 ## File listing
 
