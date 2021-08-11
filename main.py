@@ -121,11 +121,11 @@ if __name__ == '__main__':
     add_arg('-t_labels',    nargs='+',  type=str,   required=True,  help='concatenated labels of teachers corresponding to t_path, e.g., t0_label: 1 2 3 4 and t1_label: 3 4 5 6, then t_labels: 1 2 3 4 3 4 5 6')
     add_arg('-stu_labels',  nargs='+',  type=str,   required=True,  help='student labels, e.g., 1 2 3 4 5 6')
     add_arg('-dataname',    nargs='+',  type=str,   required=True,  help='dataname, e.g., data1 ')
-    add_arg('-lr',                      type=float, default=0.01,   help='Student: learning rate')
-    add_arg('-ep',                      type=int,   default=200,    help='Student: total epochs for training')
-    add_arg('-bs',                      type=int,   default=8,      help='Student: batch size')
-    add_arg('-layer',                  type=int,   default=2,      help='Student: #layers')
-    add_arg('-hidden',                  type=int,   default=8,      help='Student: #hidden units')
+    add_arg('-lr',                      type=float, default=0.001,  help='learning rate')
+    add_arg('-ep',                      type=int,   default=500,    help='#epochs')
+    add_arg('-bs',                      type=int,   default=8,      help='batch size')
+    add_arg('-layer',                   type=int,   default=1,      help='#layers')
+    add_arg('-hidden',                  type=int,   default=32,     help='#hidden units')
     
     args = parser.parse_args()
     t_numlabel = args.t_numlabel
