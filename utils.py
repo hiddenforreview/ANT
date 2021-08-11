@@ -109,16 +109,16 @@ def read_file(txt_path):
 
 
 def read_data(dataname):
-    txt_path = './'+dataname+'/xtrain.txt'
+    txt_path = './data/'+dataname+'/xtrain.txt'
     x_train = read_file(txt_path)
     x_train = np.array(x_train)
-    txt_path = './'+dataname+'/ytrain.txt'
+    txt_path = './data/'+dataname+'/ytrain.txt'
     y_train = read_file(txt_path)
     y_train = np.array(y_train)
-    txt_path = './'+dataname+'/xtest.txt'
+    txt_path = './data/'+dataname+'/xtest.txt'
     x_test = read_file(txt_path)
     x_test = np.array(x_test)
-    txt_path = './'+dataname+'/ytest.txt'
+    txt_path = './data/'+dataname+'/ytest.txt'
     y_test = read_file(txt_path)
     y_test = np.array(y_test)
     return x_train,y_train,x_test,y_test
