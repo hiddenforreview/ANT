@@ -14,35 +14,29 @@ Prepared folders:
 
 + __data__ : directory to place training data
 + __teachers__ : directory to place teacher models
-+ __output__ : directory for training logs 
-    + __plot__ : directory for training plots
++ __output__ : directory for training logs and outputs 
 
 The datasets and the teachers we use in our paper are available here:
 
 
 Run script as:
 
-    python main.py -expname syn_exp1 -t_model ./teachers/exp1_syn_t1.sav ./teachers/exp1_syn_t2.sav \
-    -t_numclass 4 4 -t_class 1 2 3 4 3 4 5 6 -s_class 1 2 3 4 5 6 -data ./data/SYN/syn_test.txt
-  
-  
+    python main.py -t_numlabel 4 4 -t_labels 1 2 3 4 3 4 5 6 -stu_labels 1 2 3 4 5 6 -t_path './teachers/t0.sav' './teachers/t1.sav' -dataname 'data1'   
+
 <b>Parameters:</b>
 
 + __Required:__
-  + __-t_model__ : a list of paths of teacher models 
-  + __-t_labels__ : a list of specialized classes of each teacher, concatenated in correspond to t_model , e.g., t1_class: 1 2 3 4 and t2_class: 3 4 5 6, then t_class: 1 2 3 4 3 4 5 6
-  + __-s_labels__ : a list of comprehensive classes of the student
-  + __-data__ : the path of student training data file
+  + __-t_path : path of each teacher model, e.g., './t0.sav' './t1.sav'
+  + __-t_numlabel : #labels corresponding to each teacher in t_path, e.g., 4 4'
+  + __-t_labels : concatenated specialized labels of each teacher corresponding to t_path, e.g., t0_label: 1 2 3 4 and t1_label: 3 4 5 6, then t_labels: 1 2 3 4 3 4 5 6
+  + __-stu_labels : student labels, e.g., 1 2 3 4 5 6
+  + __-dataname : unlabelled data for training the student
 
-+ __Student network:__
++ __Hyperparameters:__
   + __-lr__ : learning rate, default 0.001
   + __-ep__ : epochs, default 500
   + __-bs__ : batch size, default 8
-  + __-layers__ : #layers, default 1
-  + __-hiddim__ : #hidden units, default 32
+  + __-layer__ : #layers, default 1
+  + __-hidden__ : #hidden size, default 32
 
-+ __Others:__
-  + __-seed__ : set seed for reproduction, default 0
-  + __--save__ : boolean parameters, whether to save the student model, default false
-  
   
