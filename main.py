@@ -1,5 +1,4 @@
 import os
-os.chdir("/Users/JidaThada/Desktop/1 Research/p4/github")
 import argparse
 import numpy as np
 import torch
