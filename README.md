@@ -21,7 +21,7 @@ The datasets and the teachers we use in our paper are available here: https://dr
 
 Run script as:
 
-    python main.py -t_numlabel 4 4 -t_labels 1 2 3 4 3 4 5 6 -stu_labels 1 2 3 4 5 6 -t_path './teachers/t0.sav' './teachers/t1.sav' -dataname 'data1'   
+    python main.py -t_numlabel 4 4 -t_labels 1 2 3 4 3 4 5 6 -stu_labels 1 2 3 4 5 6 -t_path './teachers/t0.sav' './teachers/t1.sav' -dataname 'sample_data'   
 
 <b>Parameters:</b>
 
