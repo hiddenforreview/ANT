@@ -16,7 +16,7 @@ Prepared folders:
 + __teachers__ : directory to place teacher models
 + __output__ : directory for training logs and outputs 
 
-The datasets and the teachers we use in our paper are available here:
+The datasets and the teachers we use in our paper are available here: https://drive.google.com/drive/folders/1guPbiUawDvVrkhZXQvMZPS4blGosZiWW?usp=sharing
 
 
 Run script as:
