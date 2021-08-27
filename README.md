@@ -1,4 +1,4 @@
-# Knowledge Amalgamation for Multi-Label Classification (KAMLC)
+# Knowledge Amalgamation for Multi-Label Classification (KA-MLC)
 This is the implementation repository of <i>Adaptive kNowledge Transfer (ANT)</i>, the solution for (KAMLC).
 
 ## File listing
