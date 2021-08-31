@@ -27,11 +27,11 @@ Run script as:
 <b>Parameters:</b>
 
 + __Required:__
-  + __-t_path : path of each teacher model, e.g., './t0.sav' './t1.sav'
-  + __-t_numlabel : #labels corresponding to each teacher in t_path, e.g., 4 4'
-  + __-t_labels : concatenated specialized labels of each teacher corresponding to t_path, e.g., t0_label: 1 2 3 4 and t1_label: 3 4 5 6, then t_labels: 1 2 3 4 3 4 5 6
-  + __-stu_labels : student labels, e.g., 1 2 3 4 5 6
-  + __-dataname : unlabelled data for training the student
+  + __-t_path__ : path of each teacher model, e.g., './t0.sav' './t1.sav'
+  + __-t_numlabel__ : #labels corresponding to each teacher in t_path, e.g., 4 4'
+  + __-t_labels__ : concatenated specialized labels of each teacher corresponding to t_path, e.g., t0_label: 1 2 3 4 and t1_label: 3 4 5 6, then t_labels: 1 2 3 4 3 4 5 6
+  + __-stu_labels__ : student labels, e.g., 1 2 3 4 5 6
+  + __-dataname__ : unlabelled data for training the student
 
 + __Hyperparameters:__
   + __-lr__ : learning rate, default 0.001
